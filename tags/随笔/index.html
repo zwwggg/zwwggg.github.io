@@ -396,7 +396,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1067,16 +1067,9 @@
 
     $(function() {
       var Counter = AV.Object.extend("Counter");
-      // 
-      if ($('.leancloud_visitors').length == 1) {
+      
         addCount(Counter);
-        console.log("add Count, %d", $('.leancloud_visitors').length)
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-        console.log("show Count, %d", $('.post-title-link').length)
-      }
-      // 
-      console.log("test, %d, %d", $('.leancloud_visitors').length, $('.post-title-link').length);
+      
     });
   </script>
 

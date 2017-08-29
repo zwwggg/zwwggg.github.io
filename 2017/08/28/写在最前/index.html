@@ -446,22 +446,6 @@
       
 
       
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/29/test/" rel="prev" title="test">
-                test <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
 
       
       
@@ -527,7 +511,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1198,16 +1182,9 @@
 
     $(function() {
       var Counter = AV.Object.extend("Counter");
-      // 
-      if ($('.leancloud_visitors').length == 1) {
+      
         addCount(Counter);
-        console.log("add Count, %d", $('.leancloud_visitors').length)
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-        console.log("show Count, %d", $('.post-title-link').length)
-      }
-      // 
-      console.log("test, %d, %d", $('.leancloud_visitors').length, $('.post-title-link').length);
+      
     });
   </script>
 
